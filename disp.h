@@ -12,6 +12,18 @@ class disp : public QWidget
 public:
     explicit disp(QWidget *parent = nullptr);
 
+public:
+    void setvalues(qreal iValues);
+    void paintEvent(QPaintEvent *event) override;
+
+private:
+    qreal Values;
+    const static int radius;
+    const static int maxv;
+    const static int minv;
+
+
+
 signals:
 
 public slots:
