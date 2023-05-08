@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>402</width>
-    <height>502</height>
+    <height>255</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QTextEdit" name="textEdit">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>370</y>
+     <x>60</x>
+     <y>100</y>
      <width>256</width>
      <height>41</height>
     </rect>
@@ -39,8 +39,8 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>420</y>
+     <x>60</x>
+     <y>150</y>
      <width>251</width>
      <height>61</height>
     </rect>
@@ -61,6 +61,19 @@
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QPushButton" name="swiBut">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>70</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>中/En</string>
+   </property>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

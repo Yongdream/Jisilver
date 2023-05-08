@@ -19,6 +19,7 @@ const QString baiduTokenSecret = "eKh7a9DryCtS4kruakh2q6Mwbq7UOLt9";
 
 // 语音识别相关
 const QString baiduspeechUrl = "http://vop.baidu.com/server_api?dev_pid=1537&cuid=%1&token=%2";
+const QString baiduspeechUrlEn = "http://vop.baidu.com/server_api?dev_pid=1737&cuid=%1&token=%2";
 
 
 
@@ -28,7 +29,7 @@ class Speech : public QObject
 public:
     explicit Speech(QObject *parent = nullptr);
 
-    QString speechIdentify(QString filename);
+    QString speechIdentify(QString filename, bool isEn=true);
     QString getJsonvalue(QByteArray replydata, QString key);
 
 signals:

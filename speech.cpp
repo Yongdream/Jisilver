@@ -5,7 +5,7 @@ Speech::Speech(QObject *parent) : QObject(parent)
 
 }
 
-QString Speech:: speechIdentify(QString filename)
+QString Speech:: speechIdentify(QString filename, bool isEn)
 {
     QString accessToken;
 
@@ -32,7 +32,17 @@ QString Speech:: speechIdentify(QString filename)
     }
 
     // 识别语音
-    QString speechUrl = QString(baiduspeechUrl).arg(QHostInfo::localHostName()).arg(accessToken);
+    QString speechUrl;
+    if (isEn == true)
+    {
+       speechUrl = QString(baiduspeechUrl).arg(QHostInfo::localHostName()).arg(accessToken);
+    }
+    else
+    {
+       speechUrl = QString(baiduspeechUrlEn).arg(QHostInfo::localHostName()).arg(accessToken);
+    }
+    qDebug() << speechUrl;
+
 
     // 文件转QByteArray
     QFile file;

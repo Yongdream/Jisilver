@@ -29,15 +29,13 @@ SOURCES += \
         widget.cpp \
     audio.cpp \
     speech.cpp \
-    http.cpp \
-    disp.cpp
+    http.cpp
 
 HEADERS += \
         widget.h \
     audio.h \
     speech.h \
-    http.h \
-    disp.h
+    http.h
 
 FORMS += \
         widget.ui

@@ -1,6 +1,7 @@
 #include "widget.h"
 #include "ui_widget.h"
 
+bool isEng = true;
 Widget::Widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::Widget)
@@ -8,6 +9,7 @@ Widget::Widget(QWidget *parent) :
     ui->setupUi(this);
 
     ui->pushBut->setText("按住说话");
+    ui->swiBut->setText("中文");
 }
 
 Widget::~Widget()
@@ -31,7 +33,7 @@ void Widget::on_pushBut_released()
 
     // 识别
     speech = new Speech;
-    QString text = speech->speechIdentify("E:\\Sail\\Course\\IoT\\JisilverAudio\\demo.pcm");
+    QString text = speech->speechIdentify("E:\\Sail\\Course\\IoT\\JisilverAudio\\demo.pcm", isEng);
 
     ui->textEdit->setText(text);
 
@@ -41,4 +43,14 @@ void Widget::on_pushBut_released()
 void Widget::on_clearBut_clicked()
 {
     ui->textEdit->clear();
+}
+
+void Widget::on_swiBut_pressed()
+{
+    isEng = !isEng;
+    if (isEng) {
+        ui->swiBut->setText("中文");
+    } else {
+        ui->swiBut->setText("En");
+    }
 }

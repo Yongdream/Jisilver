@@ -14,6 +14,7 @@
 #include <QTime>	//能系统时间
 #include <QTimer>	//定时器
 
+
 namespace Ui {
 class Widget;
 }
@@ -33,12 +34,13 @@ private slots:
 
     void on_clearBut_clicked();
 
+    void on_swiBut_pressed();
+
 private:
     Ui::Widget *ui;
     Audio *audio;
     Speech *speech;
 
-    void paintEvent(QPaintEvent *event);
 };
 
 #endif // WIDGET_H
