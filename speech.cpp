@@ -23,7 +23,7 @@ QString Speech:: speechIdentify(QString filename, bool isEn)
     {
         QString key = "access_token";
         accessToken = getJsonvalue(replydata, key);
-        qDebug() << accessToken;
+//        qDebug() << accessToken;
 //        return accessToken;
     }
     else

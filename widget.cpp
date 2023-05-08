@@ -21,6 +21,10 @@ void Widget::on_pushBut_pressed()
 {
     ui->pushBut->setText("我正在听");
 
+    QIcon icon;
+    icon.addFile(tr("E:\\Sail\\Course\\IoT\\Jisilver\\Jisilver\\icon\\voice.png"));
+    ui->pushBut->setIcon(icon);
+
     audio = new Audio;
     audio->startAudio("E:\\Sail\\Course\\IoT\\JisilverAudio\\demo.pcm");
 
