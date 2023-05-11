@@ -22,6 +22,9 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="placeholderText">
+    <string>语音识别结果</string>
+   </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -58,13 +61,16 @@
      <height>151</height>
     </rect>
    </property>
+   <property name="placeholderText">
+    <string>chatGPT对话结果</string>
+   </property>
   </widget>
   <widget class="QWidget" name="horizontalLayoutWidget_2">
    <property name="geometry">
     <rect>
      <x>60</x>
      <y>140</y>
-     <width>291</width>
+     <width>301</width>
      <height>41</height>
     </rect>
    </property>
