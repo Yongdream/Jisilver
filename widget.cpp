@@ -11,11 +11,13 @@ Widget::Widget(QWidget *parent) :
     ui->pushBut->setText("按住说话");
     ui->swiBut->setText("中文");
 
-    QIcon iconVo, iconCl;
+    QIcon iconVo, iconCl, iconAi;
     iconVo.addFile(tr("E:\\Sail\\Course\\IoT\\Jisilver\\Jisilver\\icon\\voice.png"));
     iconCl.addFile(tr("E:\\Sail\\Course\\IoT\\Jisilver\\Jisilver\\icon\\clear.png"));
+    iconAi.addFile(tr("E:\\Sail\\Course\\IoT\\Jisilver\\Jisilver\\icon\\openAI.png"));
     ui->pushBut->setIcon(iconVo);
     ui->clearBut->setIcon(iconCl);
+    ui->gatBut->setIcon(iconAi);
 
     connect(ui->gatBut, &QPushButton::clicked, this, &Widget::processText);
 }

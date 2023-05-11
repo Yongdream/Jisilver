@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>791</width>
-    <height>319</height>
+    <width>422</width>
+    <height>385</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,39 +36,6 @@
     <string>Jisilver</string>
    </property>
   </widget>
-  <widget class="QWidget" name="horizontalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>160</y>
-     <width>251</width>
-     <height>83</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="3" column="1">
-     <widget class="QPushButton" name="clearBut">
-      <property name="text">
-       <string>清除</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QPushButton" name="pushBut">
-      <property name="text">
-       <string>按住说话</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QPushButton" name="gatBut">
-      <property name="text">
-       <string>chatGPT</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
   <widget class="QPushButton" name="swiBut">
    <property name="geometry">
     <rect>
@@ -85,12 +52,45 @@
   <widget class="QTextEdit" name="gptWin">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>90</y>
+     <x>60</x>
+     <y>190</y>
      <width>301</width>
      <height>151</height>
     </rect>
    </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushBut">
+      <property name="text">
+       <string>按住说话</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="clearBut">
+      <property name="text">
+       <string>清除</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="gatBut">
+      <property name="text">
+       <string>chatGPT</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
