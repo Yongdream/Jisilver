@@ -29,13 +29,15 @@ SOURCES += \
         widget.cpp \
     audio.cpp \
     speech.cpp \
-    http.cpp
+    http.cpp \
+    chatgpt.cpp
 
 HEADERS += \
         widget.h \
     audio.h \
     speech.h \
-    http.h
+    http.h \
+    chatgpt.h
 
 FORMS += \
         widget.ui
@@ -44,3 +46,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    gui.qrc

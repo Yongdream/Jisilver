@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>gui_pic/DJI_0515-2.jpg</file>
+        <file>gui_pic/DJI_0395.jpg</file>
+    </qresource>
+</RCC>

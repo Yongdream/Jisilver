@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>402</width>
-    <height>255</height>
+    <width>791</width>
+    <height>319</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>100</y>
-     <width>256</width>
+     <y>90</y>
+     <width>301</width>
      <height>41</height>
     </rect>
    </property>
@@ -26,8 +26,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>30</y>
+     <x>70</x>
+     <y>40</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -39,24 +39,31 @@
   <widget class="QWidget" name="horizontalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>80</x>
      <y>160</y>
      <width>251</width>
-     <height>54</height>
+     <height>83</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="2" column="1">
+    <item row="3" column="1">
      <widget class="QPushButton" name="clearBut">
       <property name="text">
        <string>清除</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
+    <item row="0" column="1">
      <widget class="QPushButton" name="pushBut">
       <property name="text">
        <string>按住说话</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="gatBut">
+      <property name="text">
+       <string>chatGPT</string>
       </property>
      </widget>
     </item>
@@ -65,14 +72,24 @@
   <widget class="QPushButton" name="swiBut">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>70</y>
+     <x>290</x>
+     <y>60</y>
      <width>75</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
     <string>中/En</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="gptWin">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>90</y>
+     <width>301</width>
+     <height>151</height>
+    </rect>
    </property>
   </widget>
  </widget>
