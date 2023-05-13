@@ -29,8 +29,8 @@ bool Http::post_syn(const QString &url, QMap<QByteArray, QByteArray> headerdata,
     connect(reply, SIGNAL(finished()), &l, SLOT(quit()));
     l.exec();
 
-    qDebug()<< QSslSocket::sslLibraryBuildVersionString();
-    qDebug() << "OpenSSL支持情况:" << QSslSocket::supportsSsl();
+//    qDebug()<< QSslSocket::sslLibraryBuildVersionString();
+//    qDebug() << "OpenSSL支持情况:" << QSslSocket::supportsSsl();
 
     if(reply != nullptr && reply->error() == QNetworkReply::NoError)
     {

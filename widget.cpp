@@ -32,6 +32,7 @@ void Widget::on_pushBut_pressed()
     ui->pushBut->setText("我正在听");
 
     audio = new Audio;
+
     audio->startAudio("E:\\Sail\\Course\\IoT\\JisilverAudio\\demo.pcm");
 
 }
@@ -72,16 +73,17 @@ void Widget::on_swiBut_pressed()
 
 void Widget::processText()
 {
-    // 从文本框中获取用户输入的文本
+    tuling = new Tuling;
     QString userInput = ui->textEdit->toPlainText();
+
+    qDebug() << "开始调用图灵机器人api...";
     qDebug() << userInput;
+    tuling->Json_data(userInput);
+    tuling->http_connect();
 
-    // 创建 ChatGPT 实例
-    ChatGPT chatGpt;
+    QString dialogue = tuling->getJson();
+    tuling->doProceesFinished();
 
-    // 调用 ChatGPT 的处理函数生成回复
-    QString reply = chatGpt.generateReply(userInput);
 
-    // 在结果文本框中显示回复
-    ui->gptWin->setPlainText(reply);
+
 }

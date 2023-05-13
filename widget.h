@@ -5,19 +5,11 @@
 #include "audio.h"
 #include "speech.h"
 #include "chatgpt.h"
+#include "tuling.h"
 
 #include <QPushButton>
 #include <QLineEdit>
 #include <QTextEdit>
-
-#include <QPaintEvent>	//绘图事件
-#include <QDebug>		//测试
-#include <QPainter>	//画家
-#include <QPen>	//笔
-#include <QBrush>	//画刷
-#include <QPoint>	//点
-#include <QTime>	//能系统时间
-#include <QTimer>	//定时器
 
 
 namespace Ui {
@@ -41,14 +33,13 @@ private slots:
 
     void on_swiBut_pressed();
 
-    void onSendMessageClicked();
-
     void processText();
 
 private:
     Ui::Widget *ui;
     Audio *audio;
     Speech *speech;
+    Tuling *tuling;
 
     QPushButton *sendButton;
     QLineEdit *inputField;

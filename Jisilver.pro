@@ -26,6 +26,7 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
+    tuling.cpp \
         widget.cpp \
     audio.cpp \
     speech.cpp \
@@ -33,6 +34,7 @@ SOURCES += \
     chatgpt.cpp
 
 HEADERS += \
+    tuling.h \
         widget.h \
     audio.h \
     speech.h \
