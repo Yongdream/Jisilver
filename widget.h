@@ -35,6 +35,10 @@ private slots:
 
     void processText();
 
+    void on_finished_clicked();//调用JavaScript里面的函数
+    
+    void on_btnmapA_clicked();
+
 private:
     Ui::Widget *ui;
     Audio *audio;

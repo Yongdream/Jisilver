@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui multimedia
+QT       += core gui multimediaQT webenginewidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -26,6 +26,7 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
+    mainwidget.cpp \
     tuling.cpp \
         widget.cpp \
     audio.cpp \
@@ -34,6 +35,7 @@ SOURCES += \
     chatgpt.cpp
 
 HEADERS += \
+    mainwidget.h \
     tuling.h \
         widget.h \
     audio.h \

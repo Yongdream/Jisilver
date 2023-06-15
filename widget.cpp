@@ -20,6 +20,9 @@ Widget::Widget(QWidget *parent) :
     ui->gatBut->setIcon(iconAi);
 
     connect(ui->gatBut, &QPushButton::clicked, this, &Widget::processText);
+
+    m_view = new QWebEngineView(this);
+    m_view->setGeometry(0,0,550,550);
 }
 
 Widget::~Widget()
